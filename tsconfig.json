@@ -18,6 +18,7 @@
       "@/*": ["/*/index", "/*"],
       "@app/*": ["app/*/index", "app/*"]
     },
+    "preserveSymlinks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
