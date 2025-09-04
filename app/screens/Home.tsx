@@ -1,11 +1,9 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
+import { ScreenView } from '@app/components';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center'
   }
@@ -13,9 +11,8 @@ const styles = StyleSheet.create({
 
 export default function Home(): JSX.Element {
   return (
-    <View style={styles.container}>
+    <ScreenView styles={styles.container}>
       <Text>Welcome</Text>
-      <StatusBar style="auto" />
-    </View>
+    </ScreenView>
   );
 }
